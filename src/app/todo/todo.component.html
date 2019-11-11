@@ -1,0 +1,9 @@
+<section class="list-container">
+  <h1>To-Do List</h1>
+  <p>A place to store your to-dos</p>
+  <input type="text" name="search todos" id="" placeholder="Filter your todos">
+  <ul *ngFor = "let tasks of toDoArray; index as i" >
+    <li>{{i + 1}}. <a href="">Completed</a> {{tasks.task}}</li>
+  </ul> 
+  <input type="text" name="add todo" id="" placeholder="Add todo">
+</section>
